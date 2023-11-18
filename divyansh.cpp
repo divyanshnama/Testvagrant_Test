@@ -29,7 +29,7 @@ public:
         {
             if (unitPrice[i] >= 500)
             {
-                pricecurrent = unitPrice[i] * quantity[i] + (18 / 100 * unitPrice[i]) * quantity[i];
+                pricecurrent = unitPrice[i] * quantity[i] + (gst[i] / 100 * unitPrice[i]) * quantity[i];
                 pricecurrent = pricecurrent - 5 / 100 * pricecurrent;
                 totalPrice += pricecurrent;
             }
